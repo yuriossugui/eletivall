@@ -9,18 +9,18 @@
             @csrf
 
             <div class="input-group mb-2">
-                <label class="form-label" for="p1">Nota da P1:</label>
-                <input type="number" name="p1" id="" class="form-control">
+                <label class="form-label" for="p1">capital:</label>
+                <input type="number" name="capital" id="" class="form-control">
             </div>
 
             <div class="input-group mb-2">
-                <label class="form-label" for="p2">Nota da P2:</label>
-                <input type="number" name="p2" id="" class="form-control">
+                <label class="form-label" for="p2">taxa:</label>
+                <input type="number" name="taxa" id="" class="form-control">
             </div>
 
             <div class="input-group mb-2">
-                <label class="form-label" for="p3">Nota da P3:</label>
-                <input type="number" name="p3" id="" class="form-control">
+                <label class="form-label" for="p3">periodo:</label>
+                <input type="number" name="periodo" id="" class="form-control">
             </div>
 
             <div class="d-flex justify-content-center">
