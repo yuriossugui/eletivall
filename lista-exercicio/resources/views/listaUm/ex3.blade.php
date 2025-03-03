@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Exercicio 2')
+@section('title', 'Exercicio 3')
 
 @section('content')
 
@@ -9,22 +9,19 @@
             @csrf
 
             <div class="input-group mb-2">
-                <label class="form-label" for="temp">Temperatura em Celcius:</label>
+                <label class="form-label" for="temp">Temperatura em Farenheit:</label>
                 <input type="number" name="temp" id="" class="form-control">
             </div>
 
-        
+            <button class="btn btn-primary" type="submit">Enviar</button>
 
-            <div class="d-flex justify-content-center">
-                <button class="btn btn-primary">Enviar</button>
-            </div>
         </form>
     </div>
 
-    @if(isset($tempF))
+    @if(isset($response))
         <div class="d-flex justify-content-center mt-2">
             <div class="alert alert-success" role="alert">
-              <p>A temperatura em Farenheit é: {{$tempF}}</p>  
+              <p>A temperatura em farenheit é: {{$response}}</p>  
             </div>
         </div>
     @endif

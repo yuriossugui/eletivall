@@ -1,15 +1,20 @@
 <?php
 
-use App\Http\Controllers\ListaUmController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\listaUm\ListaController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-//lista 1
-Route::get('/lista-um-ex-um', [ListaUmController::class, 'exercicioUmForm'])->name('lista-um-ex-um');
-Route::post('/lista-um-ex-um', [ListaUmController::class, 'exercicioUmPost'])->name('lista-um-ex-um-post');
+// lista 1
+Route::get('/listaUm/ex1',[ListaController::class, 'ex1']);
+Route::post('/listaUm/ex1',[ListaController::class, 'ex1Post']);
 
-Route::get('/lista-um-ex-dois', [ListaUmController::class, 'exercicioDoisForm'])->name('lista-um-ex-dois');
-Route::post('/lista-um-ex-dois', [ListaUmController::class, 'exercicioDoisPost'])->name('lista-um-ex-dois-post');
+Route::get('/listaUm/ex2',[ListaController::class, 'ex2']);
+Route::post('/listaUm/ex2',[ListaController::class, 'ex2Post']);
+
+Route::get('/listaUm/ex3',[ListaController::class, 'ex3']);
+Route::post('/listaUm/ex3',[ListaController::class, 'ex3Post']);
+
+
