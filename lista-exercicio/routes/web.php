@@ -75,3 +75,12 @@ Route::post('/listaDois/ex6',[ListaDoisController::class, 'ex6Post']);
 
 Route::get('/listaDois/ex7',[ListaDoisController::class, 'ex7']);
 Route::post('/listaDois/ex7',[ListaDoisController::class, 'ex7Post']);
+
+Route::get('/listaDois/ex8',[ListaDoisController::class, 'ex8']);
+Route::post('/listaDois/ex8',[ListaDoisController::class, 'ex8Post']);
+
+Route::get('/listaDois/ex9',[ListaDoisController::class, 'ex9']);
+Route::post('/listaDois/ex9',[ListaDoisController::class, 'ex9Post']);
+
+Route::get('/listaDois/ex10',[ListaDoisController::class, 'ex10']);
+Route::post('/listaDois/ex10',[ListaDoisController::class, 'ex10Post']);
