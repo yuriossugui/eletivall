@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\listaUm\ListaController;
+use App\Http\Controllers\listaDois\ListaDoisController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -52,3 +53,25 @@ Route::post('/listaUm/ex14',[ListaController::class, 'ex14Post']);
 
 Route::get('/listaUm/ex15',[ListaController::class, 'ex15']);
 Route::post('/listaUm/ex15',[ListaController::class, 'ex15Post']);
+
+// lista 2
+Route::get('/listaDois/ex1',[ListaDoisController::class, 'ex1']);
+Route::post('/listaDois/ex1',[ListaDoisController::class, 'ex1Post']);
+
+Route::get('/listaDois/ex2',[ListaDoisController::class, 'ex2']);
+Route::post('/listaDois/ex2',[ListaDoisController::class, 'ex2Post']);
+
+Route::get('/listaDois/ex3',[ListaDoisController::class, 'ex3']);
+Route::post('/listaDois/ex3',[ListaDoisController::class, 'ex3Post']);
+
+Route::get('/listaDois/ex4',[ListaDoisController::class, 'ex4']);
+Route::post('/listaDois/ex4',[ListaDoisController::class, 'ex4Post']);
+
+Route::get('/listaDois/ex5',[ListaDoisController::class, 'ex5']);
+Route::post('/listaDois/ex5',[ListaDoisController::class, 'ex5Post']);
+
+Route::get('/listaDois/ex6',[ListaDoisController::class, 'ex6']);
+Route::post('/listaDois/ex6',[ListaDoisController::class, 'ex6Post']);
+
+Route::get('/listaDois/ex7',[ListaDoisController::class, 'ex7']);
+Route::post('/listaDois/ex7',[ListaDoisController::class, 'ex7Post']);
